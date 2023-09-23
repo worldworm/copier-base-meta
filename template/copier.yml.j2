@@ -1,0 +1,25 @@
+_subdirectory: template
+_templates_suffix: .jinja
+_answers_file: .copier-answers.[[ "base" if template_suffix == "" else "base-" ~ template_suffix ]].yml
+
+[% include "shared-config/common.yml" %]
+
+project_emoji:
+  type: str
+  help: Project emoji
+  default: "🛠️"
+
+copyright_year_start:
+  type: int
+  help: Copyright start year
+  default: 2023
+
+copyright_year_today:
+  type: int
+  help: Copyright today year
+  default: "{{ copyright_year_start }}"
+
+warning_early_dev:
+  type: bool
+  help: Add "early dev" warning?
+  default: true
