@@ -23,9 +23,11 @@ pip install copier
 
 
 ## Usage
-> **Note**
-> This is a meta template that cannot be used directly to create a project.
-> The template resulting from this meta-template can be used for this purpose: [copier-base](https://github.com/worldworm/copier-base)
+> [!NOTE]
+> This is a [meta template](https://github.com/worldworm/copier-showcase/blob/main/types/meta.md) that cannot be used directly to create a project.
+> The template resulting from this meta template can be used for this purpose: [copier-base](https://github.com/worldworm/copier-base)
+
+
 
 Make sure the requirements are met, then:
 ```bash
