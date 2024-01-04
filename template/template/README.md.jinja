@@ -7,14 +7,18 @@
 <!-- Place https://shields.io/ badges here -->
 {% if repository_provider == "GitHub" -%}
 [![GitHub repo stars](https://img.shields.io/github/stars/{{ repository_username }}/{{ repository_name }})]({{ repository_url }})
+{% if copyright_license == "MIT" -%}
 [![License](https://img.shields.io/badge/license-MIT-green?logo=opensourceinitiative&logoColor=fff)]({{ repository_url }}/blob/main/LICENSE)
+{% endif -%}
 [![GitHub last commit (main)](https://img.shields.io/github/last-commit/{{ repository_username }}/{{ repository_name }}/main)]({{ repository_url }}/commits/main/)
 [![GitHub release](https://img.shields.io/github/v/release/{{ repository_username }}/{{ repository_name }})]({{ repository_url }}/releases/latest)
 [![GitHub commits since latest release](https://img.shields.io/github/commits-since/{{ repository_username }}/{{ repository_name }}/latest/main)]({{ repository_url }}/releases/latest)
 {% endif -%}
 {% if repository_provider == "GitLab" -%}
 [![GitLab repo stars](https://img.shields.io/gitlab/stars/{{ repository_username }}/{{ repository_name }})]({{ repository_url }})
+{% if copyright_license == "MIT" -%}
 [![License](https://img.shields.io/badge/license-MIT-green?logo=opensourceinitiative&logoColor=fff)]({{ repository_url }}/blob/main/LICENSE)
+{% endif -%}
 [![GitLab last commit (main)](https://img.shields.io/gitlab/last-commit/{{ repository_username }}/{{ repository_name }}?ref=main)]({{ repository_url }}/commits/main/)
 [![GitLab release](https://img.shields.io/gitlab/v/release/{{ repository_username }}/{{ repository_name }})]({{ repository_url }}/-/releases/permalink/latest)
 {% endif %}
