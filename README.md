@@ -14,8 +14,8 @@
 
 
 ## Features
-- custom precreated readme
-- MIT license support
+- 📄 custom precreated readme
+- 📜 MIT license support
 
 
 ## Requirements
